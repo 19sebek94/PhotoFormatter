@@ -1,0 +1,68 @@
+﻿<Window x:Class="PhotoFormatter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhotoFormatter"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="PhotoConverter"
+        Height="600" Width="1000"
+        Background="LightYellow">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="270"/>
+            <ColumnDefinition Width="730"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Column="0" >
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="C:\Users\Sebastian\Desktop\Nowy folder\Photo_Jpeg.Jpeg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Grid.Column="1" >
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="C:\Users\Sebastian\Desktop\hell.Jpeg" Stretch="Fill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" 
+               Height="361" Margin="10,10,0,0" 
+               VerticalAlignment="Top" 
+               Width="563" 
+               Grid.Column="1" 
+               AllowDrop="True" 
+               Name="image"/>
+        <Label Content="Obecny format:" HorizontalAlignment="Left" Margin="10,383,293,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="148" Visibility="Visible" Name="l1" Grid.Column="1"/>
+        <Label Content="Pożądany format:" HorizontalAlignment="Left" Margin="55,143,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="160" />
+        <Button Content="Wybierz"  HorizontalAlignment="Left" Margin="85,40,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontWeight="Bold" Height="50" FontSize="18" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.1,1">
+                    <GradientStop Color="DarkKhaki" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Dane" Content="Label" HorizontalAlignment="Left" Margin="10,422,293,0" VerticalAlignment="Top" Visibility="Visible" FontSize="16" FontWeight="Bold" Grid.Column="1" RenderTransformOrigin="0.111,0.57" Width="148" />
+        <Button Content="Konwertuj" HorizontalAlignment="Left" Margin="85,355,0,0" VerticalAlignment="Top" Width="100" Height="52" Click="konwerter_Click" Name="konwerter" FontWeight="Bold" FontSize="18" IsEnabled="False">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.1,1">
+                    <GradientStop Color="DarkKhaki" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ComboBox HorizontalAlignment="Left" Margin="111,200,0,0" VerticalAlignment="Top" Loaded="ComboBox_Loaded" SelectionChanged="ComboBox_SelectionChanged" Name="combobox" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="30,270,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.301,0.57" Name="width_box"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="165,270,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.301,0.57" Name="height_box"/>
+        <Label Content="Szerokość" HorizontalAlignment="Left" Margin="30,239,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Wysokość" HorizontalAlignment="Left" Margin="165,239,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.275,0.453" FontWeight="Bold"/>
+        <Button Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="160,397,0,0" VerticalAlignment="Top" Width="10" Height="10" Name="orig" Visibility="Visible" Click="orig_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.1,1">
+                    <GradientStop Color="DarkKhaki" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

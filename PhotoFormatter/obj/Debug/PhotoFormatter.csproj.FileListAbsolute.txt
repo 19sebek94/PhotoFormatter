@@ -1,0 +1,17 @@
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\PhotoFormatter.csprojAssemblyReference.cache
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\MainWindow.g.cs
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\App.g.cs
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\PhotoFormatter_MarkupCompile.cache
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\PhotoFormatter_MarkupCompile.lref
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\bin\Debug\PhotoFormatter.exe.config
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\bin\Debug\PhotoFormatter.exe
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\bin\Debug\PhotoFormatter.pdb
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\MainWindow.baml
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\PhotoFormatter.g.resources
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\PhotoFormatter.Properties.Resources.resources
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\PhotoFormatter.csproj.GenerateResource.cache
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\PhotoFormatter.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\PhotoFormatter.exe
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\PhotoFormatter.pdb
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\bin\Debug\System.Drawing.Common.dll
+C:\Users\Sebastian\source\repos\PhotoFormatter\PhotoFormatter\obj\Debug\PhotoFormatter.csproj.CopyComplete
