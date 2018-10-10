@@ -31,7 +31,7 @@
                Grid.Column="1" 
                AllowDrop="True" 
                Name="image"/>
-        <Label Content="Obecny format:" HorizontalAlignment="Left" Margin="10,383,293,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="148" Visibility="Visible" Name="l1" Grid.Column="1"/>
+        <Label Content="Oryginalny format:" HorizontalAlignment="Left" Margin="10,383,293,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="148" Visibility="Visible" Name="l1" Grid.Column="1"/>
         <Label Content="Pożądany format:" HorizontalAlignment="Left" Margin="55,143,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="160" />
         <Button Content="Wybierz"  HorizontalAlignment="Left" Margin="85,40,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontWeight="Bold" Height="50" FontSize="18" >
             <Button.Background>
