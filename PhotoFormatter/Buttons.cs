@@ -14,6 +14,8 @@ namespace PhotoFormatter
     {
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            FilePath = string.Empty;
+            image.Visibility = Visibility.Hidden;
             OpenFileDialog op = new OpenFileDialog();
             op.Title = "Select a picture";
             op.Filter = "All supported graphics|*.jpg;*.jpeg;*.png|" + "JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg|" + "Portable Network Graphic (*.png)|*.png";
@@ -23,19 +25,22 @@ namespace PhotoFormatter
                 image.Source = new BitmapImage(new Uri(op.FileName));
             }
             FilePath = op.FileName;
+            if (string.IsNullOrEmpty(FilePath))
+                konwerter.IsEnabled = false;
 
             Match mExtension = exExtension.Match(op.FileName);
             if (mExtension.Success)
+            {
                 Dane.Content = "Format: " + mExtension.ToString() + "\n" + "Szerokość: " + image.Source.Width + "\n" + "Wysokość: " + image.Source.Height;
+                l1.Visibility = Visibility.Visible;
+                Dane.Visibility = Visibility.Visible;
+                orig.Visibility = Visibility.Visible;
+                image.Visibility = Visibility.Visible;
 
-            l1.Visibility = Visibility.Visible;
-            Dane.Visibility = Visibility.Visible;
-            orig.Visibility = Visibility.Visible;
-
-            width_box.Text = image.Source.Width.ToString();
-            height_box.Text = image.Source.Height.ToString();
-            konwerter.IsEnabled = true;
-
+                width_box.Text = image.Source.Width.ToString();
+                height_box.Text = image.Source.Height.ToString();
+                konwerter.IsEnabled = true;
+            }
         }
 
         private void konwerter_Click(object sender, RoutedEventArgs e)

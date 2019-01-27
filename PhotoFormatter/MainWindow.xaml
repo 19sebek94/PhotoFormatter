@@ -21,7 +21,7 @@
         </Rectangle>
         <Rectangle Grid.Column="1" >
             <Rectangle.Fill>
-                <ImageBrush ImageSource="C:\Users\Sebastian\Desktop\hell.Jpeg" Stretch="Fill"/>
+                <ImageBrush ImageSource="C:\Users\Sebastian\Desktop\Nowy folder\hell.Jpeg" Stretch="Fill"/>
             </Rectangle.Fill>
         </Rectangle>
         <Image HorizontalAlignment="Left" 
